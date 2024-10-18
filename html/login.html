@@ -3,22 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style>
+    h2{
+        display: flex;
+        justify-content: center;
+    }
+    .login-container{
+        display: flex;   
+        justify-content: center;
+    }
+    .btn{
+        display: flex;   
+        justify-content: center;
+    }
+</style>
 </head>
 <body>
-    <span>SRM 시스템 로그인</span>
+    <h2>SRM 시스템 로그인</h2>
     
-    <input id="mem-id" type="text" name="member-id" 
-        placeholder="ID를 입력해 주세요." required>
-    <div id="id-message"></div>
+    <div class="login-container">
+        <form method="post" action="${pageContext.request.contextPath}/login">
+            <input id="mem-id" type="text" name="member-id" 
+                placeholder="ID를 입력해 주세요." required>
+            <div id="id-message"></div>
+            
+            <input id="mem-pw" type="text" name="member-pw" 
+                placeholder="PW를 입력해 주세요." required>
+            <div id="pw-message"></div>
+            <button type="submit" id="btn-login">로그인</button>
+        </form>
+    </div>
     
-    <input id="mem-pw" type="text" name="member-pw" 
-        placeholder="PW를 입력해 주세요." required>
-    <div id="pw-message"></div>
     
-    <button type="submit" id="btn-login">로그인</button>
-
-    <button type="submit" id="btn-signup">회원가입</button>
-    <button type="submit" id="btn-search">아이디 & 비밀번호 찾기</button>
-
+    <div class="btn">
+        <button type="submit" id="btn-signup">회원가입</button>
+        <button type="submit" id="btn-search">아이디 & 비밀번호 찾기</button>
+    </div>
+    
 </body>
 </html>
