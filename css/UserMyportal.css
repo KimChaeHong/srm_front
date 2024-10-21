@@ -9,13 +9,13 @@ body {
     align-items: center;
 }
 
-.category {
+.category-tab {
     color: #748194;
     font-weight: bold;
     font-size: 18px;
 }
 
-.category.active {
+.category-tab.active {
     color: black;
 }
 
@@ -68,6 +68,7 @@ body {
     margin: 20px 0 0 76px;
     box-shadow: 4px 4px 10px rgba(190, 190, 190, 0.5);
     padding: 15px;
+    position: relative;
 }
 .task-line {
     border-bottom: 2px solid #EBEBEB;
@@ -225,22 +226,28 @@ tbody td {
     justify-content: space-between;
 }
 
-/* ----------------공지사항------------------*/
-.notice-board {
-    width: 48%;
+#pagenation {
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    background-color: #F9FAFD;
+    position: absolute;
+    bottom: 0;
 }
 
-.notice-board h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
+.page-btn {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    border: 1px solid #dee2e6;
+    margin-right: 5px;
+    align-items: center;
+    justify-content: center;
 }
 
-.notice-board table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.notice-board td {
-    padding: 8px;
-    border-bottom: 1px solid #ddd;
+.row-select{
+    width: 100px !important;
+    margin-left: 50px;
 }
