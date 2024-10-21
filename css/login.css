@@ -60,12 +60,15 @@ input {
 }
 
 .btn {
-    margin-top: 20px;
-    margin-left: 180px;
+    margin: 20px 0 45px 180px;
 }
 
 #btn-signup:hover,
 #btn-search:hover {
     border: none;
     text-decoration: underline;
+}
+
+.line {
+    margin: 0 0 5px 0;
 }
