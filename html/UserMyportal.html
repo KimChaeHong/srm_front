@@ -11,8 +11,23 @@
 </head>
 
 <body>
-    <div id="header">
-        헤더
+    <div class="navbar ms-4 me-4">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" width="30" height="24" class="d-inline-block align-text-top">
+            SRM 시스템
+          </a>
+          <div class="ms-auto">
+              <span class="me-3">정준범(개발자)</span> <button class="me-2">로그아웃</button>
+          </div>
+        </div>
+    </div>
+    <div class="ms-4">
+        <nav class="nav">
+            <a class="nav-link category active" aria-current="page" href="#">MyPortal</a>
+            <a class="nav-link category" href="#">SR관리</a>
+            <a class="nav-link category" href="#">회원관리</a>
+        </nav>
     </div>
     <div id="container" class="d-flex">
         <div id="left-side">
@@ -38,14 +53,26 @@
                         <h2>나의 할 일</h2>
                     </div>
                     <div class="tabs-container">
-                        <ul class="tabs">
-                            <li class="tab-item active">요청(0)</li>
-                            <li class="tab-item">등록(0)</li>
-                            <li class="tab-item">반려/재검토(0)</li>
-                            <li class="tab-item">접수(0)</li>
-                            <li class="tab-item">개발중(0)</li>
-                            <li class="tab-item">개발완료(0)</li>
-                        </ul>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                              <a class="nav-link tb-tab active" aria-current="page" href="#">요청(0)</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link tb-tab" href="#">등록(0)</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link tb-tab" href="#">반려/재검토(0)</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link tb-tab" href="#">접수(0)</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link tb-tab" href="#">개발중(0)</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link tb-tab" href="#">개발완료(0)</a>
+                            </li>
+                          </ul>
                     </div>
                     <table>
                         <thead>
@@ -65,7 +92,7 @@
                         <tbody>
                             <tr>
                                 <td>SR1008_001</td>
-                                <td>화면 기능 수정해주세요.</td>
+                                <td>화면 기능 수정해주세요ddddddddddddddddddddddd.</td>
                                 <td>고용 보험</td>
                                 <td>이민성</td>
                                 <td>고용노동부</td>
@@ -73,7 +100,7 @@
                                 <td>반려</td>
                                 <td>24/10/09</td>
                                 <td>24/10/16</td>
-                                <td><button>요청 상세</button></td>
+                                <td><button class="detail-btn">요청 상세</button></td>
                             </tr>
                             <tr>
                                 <td>SR1008_001</td>
@@ -85,7 +112,7 @@
                                 <td>반려</td>
                                 <td>24/10/09</td>
                                 <td>24/10/16</td>
-                                <td><button>요청 상세</button></td>
+                                <td><button class="detail-btn">요청 상세</button></td>
                             </tr>
                             <tr>
                                 <td>SR1008_001</td>
@@ -97,7 +124,7 @@
                                 <td>반려</td>
                                 <td>24/10/09</td>
                                 <td>24/10/16</td>
-                                <td><button>요청 상세</button></td>
+                                <td><button class="detail-btn">요청 상세</button></td>
                             </tr>
 
                         </tbody>
