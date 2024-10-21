@@ -4,12 +4,6 @@ body {
     background-color: #EDF2F9;
 }
 
-#header{
-    width: 100%;
-    height: 100px;
-    background-color: blueviolet;
-}
-
 .category {
     color: #748194;
     font-weight: bold;
