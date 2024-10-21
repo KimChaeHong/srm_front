@@ -1,0 +1,67 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #EDF2F9;
+}
+
+#header{
+    width: 100%;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+#container {
+    width: 100%;
+    height: 800px;
+}
+
+#left-side {
+    width: 14%;
+    justify-items: right;
+}
+
+#category-box {
+    width: 90%;
+    height: 300px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#main-content {
+    width: 86%;
+}
+
+#search-container {
+    height: 16%;
+}
+
+#search-box {
+    width: 95%;
+    height: 90%;
+    margin: 0px auto;
+    background-color: white;
+}
+
+#chart-container {
+    height: 84%;
+}
+
+#chart-box {
+    width: 95%;
+    height: 90%;
+    margin: 0px auto;
+    border-radius: 10px;
+    background-color: white; 
+}
+
+#title-area {
+    height: 8%;
+}
+
+#chart-area {
+    height: 84%;
+}
+
+#pagenation-area {
+    height: 8%;
+}
