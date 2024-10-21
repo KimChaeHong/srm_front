@@ -1,0 +1,57 @@
+.modal-dialog {
+    width: 769px;
+    height: 830px;
+    max-width: 100%; /* 화면 크기에 맞춰 자동으로 조정되도록 */
+}
+
+input{
+    width: 193px;
+    height: 31px;
+    border-radius: 2px;
+    border: 1px solid #D9D9D9;
+    margin:  12px 0px 12px 0px;
+
+}
+
+label{
+    width: 95px;
+    font-size: 13px;
+    color: #000000;
+}
+
+#manager{
+    width: 145px;
+
+}
+
+#manager + button{
+    width: 44px;
+    height: 31px;
+    border-radius: 2px;
+    border: 1px solid #DCDCE1;
+    margin:  12px 0px 12px 0px;
+    padding: 1px 2px;
+}
+
+.col-md-6 > div{
+    display: flex;              /* 가로 정렬 */
+    align-items: center;        /* 수직 가운데 정렬 */
+    gap: 4px;                  /* input과 button 사이의 간격 */
+}
+
+#sr-content{
+    width: 556px;
+    height: 223px;
+    border: 1px solid #DCDCE1;
+}
+
+#sr-content {
+    display: block; /* label을 block 요소로 변환하여 위에 배치 */
+    margin-bottom: 5px; /* label과 textarea 사이에 간격 추가 */
+}
+
+#exampleModalLabel{
+    font-size: 15px;
+    font-weight: 600; /* semibold */
+}
+
