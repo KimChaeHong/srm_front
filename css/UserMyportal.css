@@ -84,11 +84,54 @@ body {
     background-color: #eaeef3;
     padding: 20px;
 }
+.hrcss{
+    display: flex;
+    align-items: center;
+}
 
-.sidebar h2 {
-    margin-bottom: 20px;
-    font-size: 18px;
+hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid black;
+}
+.h2line{
+    padding: 0 25px 0 0px;
+}
+.myportal{
+    margin-top: 10px;
+}
+.myportal-menu{
+    margin: 25px 0 0 15px;
+}
+.myportal-span {
+    color: #3D86E7;
+    font-size: 13px;
+    margin-left: 10px;
     font-weight: bold;
+}
+.board{
+    margin-top: 40px;
+}
+.board-menu{
+    margin: 25px 0 0 15px;
+}
+.board-span{
+    font-size: 13px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: #788596;
+}
+.myportal-rightIcon{
+    margin-left: 60px;
+}
+.board-rightIcon{
+    margin-left: 70px;
+}
+.sidebar h2 {
+    margin-bottom: 3px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ABB5C5;
 }
 
 .sidebar nav ul {
