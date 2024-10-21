@@ -20,7 +20,7 @@ span {
     margin-top: 150px;
     background-color: white;
     padding: 30px;
-    border-radius: 50px;
+    border-radius: 10px;
     text-align: center;
 }
 
@@ -39,12 +39,12 @@ input {
 }
 
 #btn-login {
-    width: 50%;
+    width: 70%;
     padding: 3px;
-    background-color: #3D86E7;
-    color: white;
+    background-color: #EDF2F9;
+    color: rgb(0, 0, 0);
     border: none;
-    border-radius: 10px;
+    border-radius: 3px;
     font-size: 1rem;
     cursor: pointer;
     margin-top: 50px;
@@ -61,9 +61,11 @@ input {
 
 .btn {
     margin-top: 20px;
+    margin-left: 180px;
 }
 
 #btn-signup:hover,
 #btn-search:hover {
+    border: none;
     text-decoration: underline;
 }
