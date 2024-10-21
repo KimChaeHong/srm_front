@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="../css/srmanagement.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar ms-4 me-4">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" width="30" height="24" class="d-inline-block align-text-top">
+            SRM 시스템
+          </a>
+          <div class="ms-auto">
+              <span class="me-3">정준범(개발자)</span> <button class="me-2">로그아웃</button>
+          </div>
+        </div>
+    </div>
+    <div class="ms-4">
+        <nav class="nav">
+            <a class="nav-link category active" aria-current="page" href="#">MyPortal</a>
+            <a class="nav-link category" href="#">SR관리</a>
+            <a class="nav-link category" href="#">회원관리</a>
+        </nav>
+    </div>
+    <div id="container" class="d-flex">
+        <div id="left-side">
+            <div id="category-box" class="sidebar"> 
+                <div class="myportal">
+                    <div class="hrcss">
+                        <h2 class="h2line">My portal</h2><hr>
+                    </div>
+                    <div class="myportal-menu">
+                        <img src="../images/clipboard.png">
+                        <span class="myportal-span">나의 할 일</span>
+                        <img src="../images/rightIcon.png" class="myportal-rightIcon">
+                    </div>
+                </div>
+
+                <div class="board">
+                    <div class="hrcss">
+                        <h2 class="h2line">게시판</h2><hr>
+                    </div>
+                    <div class="board-menu">
+                        <img src="../images/book-half.png">
+                        <span class="board-span">공지사항</span>
+                        <img src="../images/rightIcon.png" class="board-rightIcon">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div id="main-content">
+
+            <div id="search-container">
+                <div id="search-box">
+                    
+                    <div class="searchBox1">
+                        <ul class="ul-style">
+
+                            <li class="li-style">
+                                <span>조회기간</span>
+                                <div class="div-style">
+                                    <!-- <input type="date" class="date-form">
+                                    <input type="date" class="date-form"> -->
+                                </div>
+                            </li>
+                            <li class="li-style">
+                                <span>관련 시스템</span>
+                                <select class="select-style">
+                                    <option>Value</option>
+                                </select>
+                            </li>
+                            <li class="li-style">
+                                <span>진행상태</span>
+                                <select class="">
+                                    <option>Value</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="searchBox2">
+                        <ul class="ul-style">
+                            <li>
+                                <span>등록지 소속</span>
+                                <input type="text" class="">
+                            </li>
+                            <li>
+                                <span>개발부서</span>
+                                <select class="">
+                                    <option>Value</option>
+                                </select>
+                            </li>
+                            
+                            <li>
+                                <span>제목</span>
+                                <input type="text" class="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="btn-box">
+                    <button class="detail-btn search-btn">검색</button>
+                </div>
+  
+            </div>
+
+            <div id="chart-container">
+                <div id="chart-box" class="task-list">
+                    <div class="task-line">
+                        <h2>나의 할 일</h2>
+                    </div>
+                    <div class="tabs-container">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                              <a class="nav-link tb-tab active" data-bs-toggle="tab" href="#">요청<span class="row-cnt">(0)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link tb-tab" data-bs-toggle="tab" href="#">등록<span class="row-cnt">(0)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link tb-tab" data-bs-toggle="tab" href="#">반려/재검토<span class="row-cnt">(0)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link tb-tab" data-bs-toggle="tab"href="#">접수<span class="row-cnt">(0)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link tb-tab" data-bs-toggle="tab" href="#">개발중<span class="row-cnt">(0)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link tb-tab" data-bs-toggle="tab" href="#">개발완료<span class="row-cnt">(0)</span></a>
+                            </li>
+                          </ul>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>요청 번호</th>
+                                <th>제목</th>
+                                <th>관련 시스템</th>
+                                <th>등록자</th>
+                                <th>소속</th>
+                                <th>개발부서</th>
+                                <th>상태</th>
+                                <th>요청일</th>
+                                <th>완료(예정)일</th>
+                                <th>상세보기</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>SR1008_001</td>
+                                <td>화면 기능 수정해주세요ddddddddddddddddddddddd.</td>
+                                <td>고용 보험</td>
+                                <td>이민성</td>
+                                <td>고용노동부</td>
+                                <td>서비스 개발 2팀</td>
+                                <td>반려</td>
+                                <td>24/10/09</td>
+                                <td>24/10/16</td>
+                                <td><button class="detail-btn">요청 상세</button></td>
+                            </tr>
+                            <tr>
+                                <td>SR1008_001</td>
+                                <td>화면 기능 수정해주세요.</td>
+                                <td>고용 보험</td>
+                                <td>이민성</td>
+                                <td>고용노동부</td>
+                                <td>서비스 개발 2팀</td>
+                                <td>반려</td>
+                                <td>24/10/09</td>
+                                <td>24/10/16</td>
+                                <td><button class="detail-btn">요청 상세</button></td>
+                            </tr>
+                            <tr>
+                                <td>SR1008_001</td>
+                                <td>화면 기능 수정해주세요.</td>
+                                <td>고용 보험</td>
+                                <td>이민성</td>
+                                <td>고용노동부</td>
+                                <td>서비스 개발 2팀</td>
+                                <td>반려</td>
+                                <td>24/10/09</td>
+                                <td>24/10/16</td>
+                                <td><button class="detail-btn">요청 상세</button></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
