@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개발계획입력</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        h2 {
+            text-align: left;
+        }
+        form {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 15px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], textarea, input[type="date"] {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            grid-column: span 4;
+            height: 100px;
+        }
+        .file-input {
+            grid-column: span 4;
+            display: flex;
+            align-items: center;
+        }
+        .file-input input {
+            flex: 1;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            grid-column: span 4;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>개발계획입력</h2>
+        <form>
+            <label for="registrant">등록자</label>
+            <input type="text" id="registrant" name="registrant">
+
+            <label for="department">소속</label>
+            <input type="text" id="department" name="department">
+
+            <label for="registration-date">등록일</label>
+            <input type="date" id="registration-date" name="registration-date">
+
+            <label for="related-system">관련 시스템</label>
+            <input type="text" id="related-system" name="related-system">
+
+            <label for="manager">개발담당자</label>
+            <div>
+                <input type="text" id="manager" name="manager">
+                <button type="button">찾기</button>
+            </div>
+
+            <label for="dev-department">개발부서</label>
+            <input type="text" id="dev-department" name="dev-department">
+
+            <label for="status">진행상태</label>
+            <input type="text" id="status" name="status">
+
+            <label for="completion-date">완료(예정)일</label>
+            <input type="date" id="completion-date" name="completion-date">
+
+            <label for="sr-title">SR 제목</label>
+            <input type="text" id="sr-title" name="sr-title" style="grid-column: span 4;">
+
+            <label for="related-task">관련근거(목적)</label>
+            <input type="text" id="related-task" name="related-task" style="grid-column: span 4;">
+
+            <label for="sr-content">SR 내용</label>
+            <textarea id="sr-content" name="sr-content">1. 목적:
+2. 개선 내용:
+3. 고려 사항:</textarea>
+
+            <div class="file-input">
+                <label for="attachment">첨부파일</label>
+                <input type="file" id="attachment" name="attachment">
+            </div>
+
+            <button type="submit">저장</button>
+        </form>
+    </div>
+</body>
+</html>
+
+</body>
+</html>
