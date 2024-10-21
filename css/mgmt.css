@@ -1,0 +1,33 @@
+body{
+    background-color: #EDF2F9;
+}
+
+div{
+    padding: 23px 0 0 15px;
+    background-color:#FFFFFF;
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#nav{
+
+}
+
+#side-bar{
+
+}
+
+#section{
+    width: 1270px;
+}
+
+#search{
+    width: 1270px;
+    height: 130px;
+}
+
+#sr-list{
+    width: 1270px;
+    height: 520px;
+
+}
