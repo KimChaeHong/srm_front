@@ -247,6 +247,10 @@ tbody td {
     justify-content: center;
 }
 
+.page-btn.active {
+    color: #3D86E7;
+}
+
 .row-select{
     width: 100px !important;
     margin-left: 50px;
