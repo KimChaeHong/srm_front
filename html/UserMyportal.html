@@ -18,15 +18,15 @@
             SRM 시스템
           </a>
           <div class="ms-auto">
-              <span class="me-3">정준범(개발자)</span> <button class="me-2">로그아웃</button>
+              <span class="me-3">정준범(개발자)</span> <a class=" btn me-2">로그아웃</a>
           </div>
         </div>
     </div>
     <div class="ms-4">
         <nav class="nav">
-            <a class="nav-link category active" aria-current="page" href="#">MyPortal</a>
-            <a class="nav-link category" href="#">SR관리</a>
-            <a class="nav-link category" href="#">회원관리</a>
+            <a class="nav-link category active" data-bs-toggle="tab" aria-current="page" href="#">MyPortal</a>
+            <a class="nav-link category" data-bs-toggle="tab" href="#">SR관리</a>
+            <a class="nav-link category" data-bs-toggle="tab" href="#">회원관리</a>
         </nav>
     </div>
     <div id="container" class="d-flex">
@@ -55,22 +55,22 @@
                     <div class="tabs-container">
                         <ul class="nav nav-tabs">
                             <li class="nav-item">
-                              <a class="nav-link tb-tab active" aria-current="page" href="#">요청(0)</a>
+                              <a class="nav-link tb-tab active" data-bs-toggle="tab" href="#">요청<span class="row-cnt">(0)</span></a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link tb-tab" href="#">등록(0)</a>
+                              <a class="nav-link tb-tab" data-bs-toggle="tab" href="#">등록<span class="row-cnt">(0)</span></a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link tb-tab" href="#">반려/재검토(0)</a>
+                              <a class="nav-link tb-tab" data-bs-toggle="tab" href="#">반려/재검토<span class="row-cnt">(0)</span></a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link tb-tab" href="#">접수(0)</a>
+                              <a class="nav-link tb-tab" data-bs-toggle="tab"href="#">접수<span class="row-cnt">(0)</span></a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link tb-tab" href="#">개발중(0)</a>
+                              <a class="nav-link tb-tab" data-bs-toggle="tab" href="#">개발중<span class="row-cnt">(0)</span></a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link tb-tab" href="#">개발완료(0)</a>
+                              <a class="nav-link tb-tab" data-bs-toggle="tab" href="#">개발완료<span class="row-cnt">(0)</span></a>
                             </li>
                           </ul>
                     </div>
@@ -131,22 +131,6 @@
                     </table>
                 </div>
             </div>
-            
-            <div id="search-container">
-                <div id="search-box">
-                    <div class="notice-board">
-                        <h3>공지사항</h3>
-                        <table>
-                            <tr>
-                                <td>1</td>
-                                <td>사용자 메뉴얼(24.10.13. 수정)</td>
-                                <td>2022-10-09</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            
         </div>
     </div>
 </body>
