@@ -1,0 +1,79 @@
+body {
+    background-color: #EDF2F9;
+}
+
+#nav-tab{
+    padding: 23px 0 0 15px;
+    width: 220px;
+    height: 250px;
+    background-color:#FFFFFF;
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: inherit; /* 기본 텍스트 색상으로 설정 */
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+}
+
+.nav-item {
+    width: 190px;
+    display: flex;
+    align-items: center;
+}
+
+#sr-mgmt{
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 600; 
+    padding : 7px 15px;
+    margin-bottom: 9px; /* 각 a 태그 사이에 9px 간격 설정 */
+    color:#ABB5C5;
+}
+
+#sr-hr{
+    flex-grow: 1;
+    margin-left: 9px; /* a 태그와 hr 사이의 간격 */
+    padding: 7px 15px;
+    margin-top: auto;
+    margin-bottom: 9px;
+    border: none;
+    border-top: 1px solid black ;
+}
+
+
+#sr-request,
+#sr-prg {
+    width: 220px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 600; 
+    padding : 7px 15px;
+    margin-bottom: 9px; /* 각 a 태그 사이에 9px 간격 설정 */
+}
+
+#sr-request,
+#sr-prg {
+    color: #788596;
+}
+
+#sr-request:focus,
+#sr-prg:focus {
+    color: #3D86E7; 
+}
+
+.nav-link #chevron {
+    margin-left: 47px;  /* 왼쪽으로 47px 간격 */
+    margin-right: 20px; /* 오른쪽으로 47px 간격 */
+}
+
+.nav-link #chart {
+    color: black;
+    margin-right: 11px; /* 오른쪽으로 47px 간격 */
+}
