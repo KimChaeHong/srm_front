@@ -4,10 +4,26 @@ body {
     background-color: #EDF2F9;
 }
 
+/* 헤더 css */
 #header{
     width: 100%;
-    height: 100px;
-    background-color: blueviolet;
+    height: 90px;
+}
+
+#mem-info {
+    text-align: right;
+    height: 40px;
+    margin-right: 3%;
+}
+
+#category-buttons {
+    width: 98%;
+    height: 50px;
+    margin-left: 2%;
+}
+
+.category-button {
+    font-size: large;
 }
 
 #container {
@@ -15,6 +31,7 @@ body {
     height: 800px;
 }
 
+/* 목차 css */
 #left-side {
     width: 14%;
     justify-items: right;
@@ -27,10 +44,12 @@ body {
     background-color: white;
 }
 
+/* 메인콘텐츠 css */
 #main-content {
     width: 86%;
 }
 
+/* 검색창 css */
 #search-container {
     height: 16%;
 }
@@ -42,6 +61,7 @@ body {
     background-color: white;
 }
 
+/* 표부분 css */
 #chart-container {
     height: 84%;
 }
@@ -55,13 +75,26 @@ body {
 }
 
 #title-area {
+    display: flex;
+    align-items: center;
     height: 8%;
+    border-bottom: 1px solid #EBEBEB;
+    margin-bottom: 10px;
+
 }
 
 #chart-area {
+    width: 96%;
     height: 84%;
+    border: 1px solid #EDF2F9;
+    margin: 0px auto;
 }
 
 #pagenation-area {
     height: 8%;
+    background-color: #F9FAFD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
