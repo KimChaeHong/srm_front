@@ -40,67 +40,55 @@
                                 <label for="registration-date">등록일</label>
                                 <input type="date" id="registration-date" name="registration-date">
                             </div>
-                            <div class="input-button-container">
-                                <label for="manager">개발담당자</label>
-                                <input type="text" id="manager" name="manager">
-                                <button type="button" style="font-size: 10px;">찾기</button>
-                            </div>
-                            <div>
-                                <label for="status">진행상태</label>
-                                <input type="text" id="status" name="status">
+                            <div class="form-row">
+                                <label for="completion-date">요청일</label>
+                                <input type="date" id="completion-date" name="completion-date">
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="form-row">
-                                <label for="department">소속</label>
+                                <label for="department">부서</label>
                                 <input type="text" id="department" name="department">
                             </div>
-                        
                             <div class="form-row">
                                 <label for="related-system">관련 시스템</label>
                                 <input type="text" id="related-system" name="related-system">
                             </div>
-                        
-                            <div class="form-row">
-                                <label for="dev-department">개발부서</label>
-                                <input type="text" id="dev-department" name="dev-department">
-                            </div>
-                        
                             <div class="form-row">
                                 <label for="completion-date">완료(예정)일</label>
                                 <input type="date" id="completion-date" name="completion-date">
                             </div>
                         </div>
 
+                        <div>
+                            <div class="form-row">
+                                <label for="sr-title" ">SR 제목</label>
+                                <input type=" text" id="sr-title" name="related-system">
+                            </div>
 
-                        <div class="form-row">
-                            <label for="sr-title" ">SR 제목</label>
-                            <input type=" text" id="sr-title" name="sr-title"
-                                style="grid-column: span 4; width: 556px;">
-                        </div>
+                            <div class="form-row">
+                                <label for="related-system">관련 시스템</label>
+                                <input type="text" id="related-system" name="related-system">
+                            </div>
 
-                        <div class="form-row">
-                            <label for="related-task">관련근거(목적)</label>
-                            <input type="text" id="related-task" name="related-task"
-                                style="grid-column: span 4; width: 556px;">
-                        </div>
+                            <div class="form-row">
+                                <label for="sr-content">SR 내용</label>
+                                <textarea id="sr-content" name="sr-content">
+        1. 목적:
 
-                        <div class="form-row">
-                            <label for="sr-content">SR 내용</label>
-                            <textarea id="sr-content" name="sr-content">
-    1. 목적:
+        2. 개선 내용:
+        
+        3. 고려 사항:
+                                </textarea>
+                            </div>
 
-    2. 개선 내용:
-    
-    3. 고려 사항:
-                            </textarea>
-                        </div>
-
-                        <div class="form-row">
+                            <div class="form-row">
                             <label for="attachment">첨부파일</label>
                             <input type="file" id="attachment" name="attachment">
                         </div>
+                        </div>
+                    
                     </div>
                 </div>
             </div>
