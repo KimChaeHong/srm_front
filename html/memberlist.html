@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>SR목록</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="../css/memberlist.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar ms-4 me-4">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" width="30" height="24" class="d-inline-block align-text-top">
+            SRM 시스템
+          </a>
+          <div class="ms-auto">
+              <span class="me-3">정준범(개발자)</span> <button class="me-2">로그아웃</button>
+          </div>
+        </div>
+    </div>
+    <div class="ms-4">
+        <nav class="nav">
+            <a class="nav-link category" aria-current="page" href="#">MyPortal</a>
+            <a class="nav-link category" href="#">SR관리</a>
+            <a class="nav-link category active" href="#">회원관리</a>
+        </nav>
+    </div>
+    <div id="container" class="d-flex">
+        <!-- -------------왼쪽 사이드바------------- -->
+        <div id="side-bar" class="col-md-2">
+            <div id="chart" class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true" id="sr-mgmt">회원 관리</a>
+                <hr class="navbar-vertical-divider" id="sr-hr">
+            </div>
+            <a class="nav-link" id="sr-request" href="#">
+                <i id="chart" class="bi bi-person-lines-fill"></i>회원 조회
+                <i id="chevron" class="bi bi-chevron-right"></i>
+            </a>
+            <a class="nav-link" id="sr-prg" href="#">
+                <i id="chart" class="bi bi-person-fill-gear"></i>가입 관리
+                <i id="chevron" class="bi bi-chevron-right"></i>
+            </a>
+        </div>
+        
+        <div id="main-content">
+
+            <div id="search-container">
+                <div id="search-box">
+                    
+                    <div class="searchBox1">
+                        <ul class="ul-style">
+
+                            <li class="li-style">
+                                <span>소속</span>
+                                <select class="select-style">
+                                    <option>Value</option>
+                                </select>
+                            </li>
+                            <li class="li-style space1">
+                                <span>부서</span>
+                                <select class="select-style dept">
+                                    <option>Value</option>
+                                </select>
+                            </li>
+                            <li class="li-style">
+                                <span class="join">가입 일자</span>
+                                <div class="div-style">
+                                    <input type="date" class="date-form date1"> - 
+                                    <input type="date" class="date-form">
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="searchBox2">
+                        <ul class="ul-style">
+                            <li class="li-style">
+                                <span>권한</span>
+                                <select class="select-style">
+                                    <option>Value</option>
+                                </select>
+                            </li>
+                            <li class="li-style space1">
+                                <span>승인여부</span>
+                                <select class="select-style space2">
+                                    <option>Value</option>
+                                </select>
+                            </li>
+                            
+                            <li class="li-style space1">
+                                <span class="title-style">이름 검색</span>
+                                <input type="text" class="space3">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="btn-box">
+                    <button class="detail-btn search-btn">검색</button>
+                </div>
+  
+            </div>
+
+            <div id="chart-container">
+                <div id="chart-box" class="task-list">
+                    <div class="task-line">
+                        <h2>회원 목록 조회</h2>
+                    </div>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 100px; max-width: 100px;">회원이름</th>
+                                <th style="width: 100px; max-width: 100px;">사번</th>
+                                <th style="width: 150px; max-width: 150px;">소속</th>
+                                <th style="width: 150px; max-width: 150px;">부서</th>
+                                <th style="width: 100px; max-width: 100px;">사용자 역할</th>
+                                <th style="width: 100px; max-width: 100px;">팀 역할</th>
+                                <th style="width: 120px; max-width: 120px;">가입 요청일</th>
+                                <th style="width: 100px; max-width: 100px;">승인 여부</th>
+                                <th style="width: 120px; max-width: 120px;">회원상세</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>이민성</td>
+                                <td>OTI30001</td>
+                                <td>데이터산업진흥원aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+                                <td>서비스 관리팀</td>
+                                <td>개발자</td>
+                                <td>개발팀장</td>
+                                <td>2024-10-12</td>
+                                <td>Y</td>
+                                <td><button class="detail-btn">상세보기</button></td>
+                            </tr>
+                            <tr>
+                                <td>김채홍</td>
+                                <td>OTI30002</td>
+                                <td>데이터산업진흥원aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+                                <td>서비스 관리팀</td>
+                                <td>일반사용자</td>
+                                <td></td>
+                                <td>2024-10-12</td>
+                                <td>Y</td>
+                                <td><button class="detail-btn">상세보기</button></td>
+                            </tr>
+                            <tr>
+                                <td>정준범</td>
+                                <td>OTI30003</td>
+                                <td>데이터산업진흥원aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+                                <td>서비스 관리팀</td>
+                                <td>개발자</td>
+                                <td>개발팀원</td>
+                                <td>2024-10-12</td>
+                                <td>N</td>
+                                <td><button class="detail-btn">상세보기</button></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
