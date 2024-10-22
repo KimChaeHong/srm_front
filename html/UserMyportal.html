@@ -3,11 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Insert title here</title>
+    <title>Myportal</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link href="../css/userMyportal.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="../css/usermyportal.css" rel="stylesheet">
     
 </head>
 
@@ -31,31 +32,25 @@
         </nav>
     </div>
     <div id="container" class="d-flex">
-        <div id="left-side">
-            <div id="category-box" class="sidebar"> 
-                <div class="myportal">
-                    <div class="hrcss">
-                        <h2 class="h2line">My portal</h2><hr>
-                    </div>
-                    <div class="myportal-menu">
-                        <img src="../images/clipboard.png">
-                        <span class="myportal-span">나의 할 일</span>
-                        <img src="../images/rightIcon.png" class="myportal-rightIcon">
-                    </div>
-                </div>
-
-                <div class="board">
-                    <div class="hrcss">
-                        <h2 class="h2line">게시판</h2><hr>
-                    </div>
-                    <div class="board-menu">
-                        <img src="../images/book-half.png">
-                        <span class="board-span">공지사항</span>
-                        <img src="../images/rightIcon.png" class="board-rightIcon">
-                    </div>
-                </div>
-                
+        <!-- 왼쪽 사이드바 -->
+        <div id="side-bar" class="col-md-2">
+            <div id="chart" class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true" id="sr-mgmt">My portal</a>
+                <hr class="navbar-vertical-divider" id="sr-hr">
             </div>
+            <a class="nav-link" id="sr-request" href="#">
+                <i id="chart" class="bi bi-clipboard-check"></i>나의 할 일
+                <i id="chevron" class="bi bi-chevron-right"></i>
+            </a>
+
+            <div id="chart" class="nav-item">
+                <a class="nav-link disabled board" aria-disabled="true" id="sr-mgmt">게시판</a>
+                <hr class="navbar-vertical-divider" id="sr-hr">
+            </div>
+            <a class="nav-link" id="sr-request" href="#">
+                <i id="chart" class="bi bi-book-half"></i>공지사항
+                <i id="chevron" class="bi bi-chevron-right"></i>
+            </a>
         </div>
         <div id="main-content">
 
