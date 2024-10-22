@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Insert title here</title>
+    <title>SR목록</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="../css/srmanagement.css" rel="stylesheet">
 </head>
 
@@ -24,13 +25,28 @@
     </div>
     <div class="ms-4">
         <nav class="nav">
-            <a class="nav-link category active" aria-current="page" href="#">MyPortal</a>
-            <a class="nav-link category" href="#">SR관리</a>
+            <a class="nav-link category" aria-current="page" href="#">MyPortal</a>
+            <a class="nav-link category active" href="#">SR관리</a>
             <a class="nav-link category" href="#">회원관리</a>
         </nav>
     </div>
     <div id="container" class="d-flex">
-        <div id="left-side">
+        <!-- 왼쪽 사이드바 -->
+        <div id="side-bar" class="col-md-2">
+            <div id="chart" class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true" id="sr-mgmt">SR 관리</a>
+                <hr class="navbar-vertical-divider" id="sr-hr">
+            </div>
+            <a class="nav-link" id="sr-request" href="#">
+                <i id="chart" class="bi bi-clipboard-plus"></i>SR 요청 접수
+                <i id="chevron" class="bi bi-chevron-right"></i>
+            </a>
+            <a class="nav-link" id="sr-prg" href="#">
+                <i id="chart" class="bi bi-clipboard-data-fill"></i>SR 진척 조회
+                <i id="chevron" class="bi bi-chevron-right"></i>
+            </a>
+        </div>
+        <!-- <div id="left-side">
             <div id="category-box" class="sidebar"> 
                 <div class="myportal">
                     <div class="hrcss">
@@ -55,7 +71,7 @@
                 </div>
                 
             </div>
-        </div>
+        </div> -->
         <div id="main-content">
 
             <div id="search-container">
@@ -67,19 +83,19 @@
                             <li class="li-style">
                                 <span>조회기간</span>
                                 <div class="div-style">
-                                    <!-- <input type="date" class="date-form">
-                                    <input type="date" class="date-form"> -->
+                                    <input type="date" class="date-form date1"> - 
+                                    <input type="date" class="date-form">
                                 </div>
                             </li>
-                            <li class="li-style">
+                            <li class="li-style space1">
                                 <span>관련 시스템</span>
                                 <select class="select-style">
                                     <option>Value</option>
                                 </select>
                             </li>
-                            <li class="li-style">
+                            <li class="li-style space1">
                                 <span>진행상태</span>
-                                <select class="">
+                                <select class="select-style">
                                     <option>Value</option>
                                 </select>
                             </li>
@@ -88,20 +104,20 @@
 
                     <div class="searchBox2">
                         <ul class="ul-style">
-                            <li>
+                            <li class="li-style">
                                 <span>등록지 소속</span>
-                                <input type="text" class="">
+                                <input type="text" class="input-style">
                             </li>
-                            <li>
+                            <li class="li-style space1">
                                 <span>개발부서</span>
-                                <select class="">
+                                <select class="select-style space2">
                                     <option>Value</option>
                                 </select>
                             </li>
                             
-                            <li>
-                                <span>제목</span>
-                                <input type="text" class="">
+                            <li class="li-style space1">
+                                <span class="title-style">제목</span>
+                                <input type="text" class="space3">
                             </li>
                         </ul>
                     </div>

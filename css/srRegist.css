@@ -1,7 +1,28 @@
+.modal-content {
+    border-radius: 3px; /* 테두리를 3px로 둥글게 */
+}
+
 .modal-dialog {
     width: 769px;
     height: 830px;
     max-width: 100%; /* 화면 크기에 맞춰 자동으로 조정되도록 */
+}
+
+/* 부모 컨테이너를 flex로 설정하고 가운데 정렬 */
+.container-fluid {
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 (필요할 경우) */
+}
+
+.row{
+    width: 653px;
+    height: 699px;
+}
+
+#exampleModalLabel{
+    font-size: 15px;
+    font-weight: 600; /* semibold */
 }
 
 input{
@@ -45,13 +66,47 @@ label{
     border: 1px solid #DCDCE1;
 }
 
-#sr-content {
-    display: block; /* label을 block 요소로 변환하여 위에 배치 */
-    margin-bottom: 5px; /* label과 textarea 사이에 간격 추가 */
+.form-row {
+    display: flex;
+    align-items: center; /* 수직 가운데 정렬 */
+    gap: 4px;   
 }
 
-#exampleModalLabel{
-    font-size: 15px;
-    font-weight: 600; /* semibold */
+#registration-date, #completion-date {
+    font-size: 12px; /* input 안의 글씨 크기 */
+    padding: 10px;
 }
 
+#attachment{
+    padding-left: 10px;
+    width: 556px;
+}
+
+#save-btn {
+    border: 1px solid #DCDCE1;
+    background-color: white;
+    color: #4D5969;
+
+    width: 63px;        /* 버튼 너비 고정 */
+    height: 28px;       /* 버튼 높이 고정 */
+    font-size: 12px;    /* 텍스트 크기 고정 */
+    
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center;     /* 수직 가운데 정렬 */
+    padding: 0;              /* 기본 padding 제거 */
+
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.bi-x-square {
+    color: #DCDCE1;
+}
+
+#close-btn{
+    width: 30px !important;
+    height: 30px !important;
+    padding: 4px;
+    border: none;
+    background-color: white;
+}
