@@ -17,7 +17,7 @@
 
 .row{
     width: 653px;
-    height: 699px;
+    height: 550px;
 }
 
 #exampleModalLabel{
@@ -54,16 +54,13 @@ label{
     padding: 1px 2px;
 }
 
-.col-md-6 > div{
-    display: flex;              /* 가로 정렬 */
-    align-items: center;        /* 수직 가운데 정렬 */
-    gap: 4px;                  /* input과 button 사이의 간격 */
-}
 
 #sr-content{
-    width: 556px;
+    border-radius: 2px;
+    width: 530px;
     height: 223px;
     border: 1px solid #DCDCE1;
+    font-size: 12px;
 }
 
 .form-row {
@@ -79,7 +76,7 @@ label{
 
 #attachment{
     padding-left: 10px;
-    width: 556px;
+    width: 530px;
 }
 
 #save-btn {
