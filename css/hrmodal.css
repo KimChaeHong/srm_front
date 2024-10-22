@@ -9,9 +9,17 @@ label {
     font-weight: 550;
 }
 
-#moale-title {
+#modal-title {
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 900;
+}
+
+#dept-select {
+    width: 250px;
+}
+
+#name-search {
+    width: 250px;
 }
 
 .hr-select{
@@ -58,6 +66,7 @@ tbody td {
     box-shadow: 0px 1px 3px rgb(0, 0, 0, 0.25);
     font-size: 12px;
     color: #4D5969;
+    margin-right: 20px;
 }
 
 .last-btn{
@@ -69,12 +78,32 @@ tbody td {
     color: #4D5969;
 }
 
-.btn-close {
+#close-btn{
     width: 30px !important;
     height: 30px !important;
     padding: 4px;
+    border: none;
+    background-color: white;
+}
+
+.bi-x-square {
+    color: #DCDCE1;
 }
 
 .modal-dialog {
     top: 20%;
+}
+
+.col-1 {
+    width: 60px;
+}
+
+.col-2 {
+    width: 300px;
+}
+.col-3 {
+    width: 240px;
+}
+.col-4 {
+    width: 200px;
 }
