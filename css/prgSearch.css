@@ -1,0 +1,69 @@
+
+/* 검색 */
+/* 공통 스타일 정의 (input, select, textarea) */
+#prg-search, #search-dept{
+    width: 130px;   
+    height: 30px;
+    border: 1px solid #D9D9D9;
+    border-radius: 3px;
+    font-size: 10px;
+    padding: 0 10px;
+}
+.prg{
+    width: 280px !important;
+}
+
+/* 공통 스타일 정의 for .div-style, .date-style */
+.div-style, .date-style {
+    width: 280px;
+}
+
+#search-container {
+    width: 1270px;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 4px 4px 10px rgba(190, 190, 190, 0.5);
+    border-radius: 10px;
+}
+
+.ul-style {
+    display: flex;
+    margin: 30px 0 30px 30px;
+    gap: 90px;
+}
+
+.li-style {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#search-box {
+    width: 1270px;
+}
+
+#search-thing {
+    width: 70px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#search-dept {
+    width: 280px;
+}
+
+.search-btn {
+    width: 63px;
+    height: 28px;
+}
+
+#search-btn {
+    font-size: 12px;
+    color: #4D5969;
+    background-color: white;
+    border: 1px solid #DCDCE1;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
