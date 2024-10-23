@@ -29,18 +29,19 @@ input, select {
     display: flex;
     width: 1534px; /* 고정 너비 */
     margin: 35px auto 0; /* 중앙 정렬 */
+    align-items: flex-start;
 }
 
 /* -------------------------------------------- */
 
 /* 사이드바 스타일 */
 #side-bar {
+    padding: 23px 0 23px 15px;
     width: 220px;
-    height: 700px;
-    flex-grow: 0;
-    border-radius: 10px;
-    background-color: white;
+    background-color: #FFFFFF;
     box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    height: auto; /* 자식 요소에 따라 높이 자동 조정 */
 }
 
 /* a 태그 기본 스타일 */
@@ -61,8 +62,7 @@ a {
 }
 
 /* SR 관리 링크 스타일 */
-#sr-mgmt {
-    width: 80px;
+#sr-contents {
     height: 30px;
     font-size: 12px;
     font-weight: 600; 
