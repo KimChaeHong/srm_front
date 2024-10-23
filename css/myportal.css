@@ -122,7 +122,7 @@ tbody td {
     justify-content: space-between;
 }
 
-#pagenation {
+#pagination {
     width: 98%;
     display: flex;
     align-items: center;
@@ -131,6 +131,8 @@ tbody td {
     background-color: #F9FAFD;
     position: absolute;
     bottom: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .page-btn {

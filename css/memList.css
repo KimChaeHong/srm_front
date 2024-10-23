@@ -223,37 +223,31 @@ a {
 }
 
 .col-1 {
-    width: 30px;
+    width: 110px;
 }
 .col-2 {
-    width: 130px;
+    width: 140px;
 }
 .col-3 {
-    width: 270px;
+    width: 160px;
 }
 .col-4 {
-    width: 100px;
+    width: 160px;
 }
 .col-5 {
-    width: 100px;
+    width: 140px;
 }
 .col-6 {
-    width: 100px;
+    width: 140px;
 }
 .col-7 {
-    width: 100px;
+    width: 160px;
 }
 .col-8 {
-    width: 100px;
+    width: 110px;
 }
 .col-9 {
-    width: 100px;
-}
-.col-10 {
-    width: 100px;
-}
-.col-11 {
-    width: 100px;
+    width: 110px;
 }
 
 tr {
@@ -279,8 +273,8 @@ th {
 
 /* Pagination */
 
-#pagenation {
-    width: 98%;
+#pagination {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -288,6 +282,9 @@ th {
     background-color: #F9FAFD;
     position: absolute;
     bottom: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
 }
 
 .page-btn {
