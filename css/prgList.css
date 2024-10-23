@@ -1,3 +1,27 @@
+/* 공통 스타일 */
+body {
+    background-color: #EDF2F9;
+    margin: 0;
+    padding: 0;
+}
+
+/* 헤더 스타일 */
+#header {
+    border-radius: 10px;
+    height: 80px;
+    background-color: var(--bs-info);
+    min-width: 1270px;
+    width: 100%;
+}
+
+/* 메인 콘텐츠 영역 */
+#main-content {
+    display: flex;
+    width: 1534px; /* 고정 너비 */
+    margin: 35px auto 0; /* 중앙 정렬 */
+    align-items: flex-start;
+}
+
 /* 사이드바 스타일 */
 #side-bar {
     padding: 23px 0 23px 15px;
@@ -26,7 +50,7 @@ a {
 }
 
 /* SR 관리 링크 스타일 */
-#sr-mgmt {
+#sr-contents {
     height: 30px;
     font-size: 12px;
     font-weight: 600; 
@@ -81,4 +105,22 @@ a {
 .nav-link #chevron {
     margin-left: auto; /* chevron 아이콘을 오른쪽으로 밀어 정렬 */
     margin-right: 20px; /* 오른쪽 간격 */
+}
+
+/* 섹션 스타일 */
+#section {
+    width: 1270px;
+    height: 700px;
+    margin-left: 44px;
+}
+
+/* 검색창 스타일 */
+#search {
+    height: 130px;
+}
+
+/* SR 목록 스타일 */
+#sr-list {
+    margin-top: 23px;
+    height: 547px;
 }
