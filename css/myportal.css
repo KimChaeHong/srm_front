@@ -1,0 +1,153 @@
+/* 공통 스타일 */
+body {
+    background-color: #EDF2F9;
+    margin: 0;
+    padding: 0;
+}
+
+/* 헤더 스타일 */
+#header {
+    border-radius: 10px;
+    height: 80px;
+    background-color: var(--bs-info);
+    min-width: 1270px;
+    width: 100%;
+}
+
+/* 메인 콘텐츠 영역 */
+#main-content {
+    display: flex;
+    width: 1534px; /* 고정 너비 */
+    margin: 35px auto 0; /* 중앙 정렬 */
+}
+
+/* 사이드바 스타일 */
+#side-bar {
+    width: 220px;
+    height: 700px;
+    flex-grow: 0;
+}
+
+/* 섹션 스타일 */
+#section {
+    width: 1270px;
+    height: 700px;
+    margin-left: 44px;
+    background-color: white;
+    box-shadow: 4px 4px 10px rgba(190, 190, 190, 0.5);
+    border-radius: 10px;
+}
+
+/* SR 목록 스타일 */
+#sr-list {
+    height: 700px;
+    padding: 15px 0;
+    position: relative;
+}
+
+/* -------------제목------- */
+.task-line {
+    border-bottom: 2px solid #EBEBEB;
+}
+h2{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#h2-style {
+    margin-left: 15px;
+}
+
+/* --------------탭------------- */
+.tabs-container {
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px 17px 0 17px;
+}
+
+.tb-tab {
+    color: #748194;
+}
+
+.tb-tab.active {
+    border-bottom: 2px solid #2C7BE5 !important;
+    font-weight: bold;
+}
+
+.tb-tab.active > .row-cnt {
+    color: #2C7BE5;
+}
+
+/* ---------------테이블 ---------------*/
+#table-container {
+    padding: 0 17px;
+}
+table {
+    width: 100%;
+    border: 1px solid #EDF2F9;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead th {
+    background-color: #f2f4f6;
+    padding: 10px 0px;
+    text-align: left;
+    font-size: 14px;
+    text-align: center;
+}
+tr {
+    border-bottom: 1px solid #EDF2F9;
+}
+
+tbody td {
+    font-size: 13px;
+    padding: 5px 0px;
+    text-align: center;
+}
+
+.detail-btn {
+    width: 50px;
+    height: 20px;
+    font-size: 8px;
+    color: #4D5969;
+    border: 1px solid #DCDCE1;
+    box-shadow: 0px 1px 2px;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.bottom-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+#pagenation {
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    background-color: #F9FAFD;
+    position: absolute;
+    bottom: 0;
+}
+
+.page-btn {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    border: 1px solid #dee2e6;
+    margin-right: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-btn.active {
+    color: #3D86E7;
+}
+
+.row-select{
+    width: 100px !important;
+    margin-left: 50px;
+}
