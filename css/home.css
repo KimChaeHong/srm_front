@@ -19,13 +19,17 @@ body {
     display: flex;
     width: 1534px; /* 고정 너비 */
     margin: 35px auto 0; /* 중앙 정렬 */
+    align-items: flex-start;
 }
 
 /* 사이드바 스타일 */
 #side-bar {
+    padding: 23px 0 23px 15px;
     width: 220px;
-    height: 700px;
-    flex-grow: 0;
+    background-color: #FFFFFF;
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    height: auto; /* 자식 요소에 따라 높이 자동 조정 */
 }
 
 /* 섹션 스타일 */
