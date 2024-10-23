@@ -1,33 +1,48 @@
-body{
+/* 공통 스타일 */
+body {
     background-color: #EDF2F9;
+    
+    margin: 0;
+    padding: 0;
 }
 
-div{
-    padding: 23px 0 0 15px;
-    background-color:#FFFFFF;
-    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.1);
+/* 헤더 스타일 */
+#header {
     border-radius: 10px;
+    height: 80px;
+    background-color: var(--bs-info);
+    min-width: 1270px;
+    width: 100%;
 }
 
-#nav{
-
+/* 메인 콘텐츠 영역 */
+#main-content {
+    display: flex;
+    width: 1534px; /* 고정 너비 */
+    margin: 35px auto 0; /* 중앙 정렬 */
 }
 
-#side-bar{
-
+/* 사이드바 스타일 */
+#side-bar {
+    width: 220px;
+    height: 700px;
+    flex-grow: 0;
 }
 
-#section{
+/* 섹션 스타일 */
+#section {
     width: 1270px;
+    height: 700px;
+    margin-left: 44px;
 }
 
-#search{
-    width: 1270px;
+/* 검색창 스타일 */
+#search {
     height: 130px;
 }
 
-#sr-list{
-    width: 1270px;
-    height: 520px;
-
+/* SR 목록 스타일 */
+#sr-list {
+    margin-top: 23px;
+    height: 547px;
 }
