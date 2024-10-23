@@ -13,9 +13,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- 개별 css -->
- 
-    <link href="../css/prgList.css" rel="stylesheet">
+    <link href="../css/reset.css" rel="stylesheet">
 
+    <link href="../css/prgList.css" rel="stylesheet">
 
 </head>
 
@@ -51,16 +51,143 @@
                 <hr class="navbar-vertical-divider" id="sr-hr">
             </div>
             <a class="nav-link" id="sr-request" href="#">
-                <i id="chart"  class="bi bi-book-half"></i>공지사항
+                <i id="chart" class="bi bi-book-half"></i>공지사항
                 <i id="chevron" class="bi bi-chevron-right"></i>
             </a>
         </div>
         <!-- section -->
         <div id="section">
             <!-- 검색창 -->
-            <div id="search" class="bg-dark-subtle"></div>
-            <!-- SR목록 -->
-            <div id="sr-list" class="bg-body-secondary"></div>
+            <div id="search-container">
+                <div id="search-box">
+                    <div class="searchBox1">
+                        <ul class="ul-style">
+                            <li class="li-style">
+                                <div id="search-thing">조회기간</div>
+                                <div class="date-style">
+                                    <input id="prg-search" type="date" class="date-form"> -
+                                    <input id="prg-search" type="date" class="date-form">
+                                </div>
+                            </li>
+                            <li class="li-style">
+                                <div id="search-thing">관련 시스템</div>
+                                <select id="prg-search" class="select-style">
+                                    <option>Value</option>
+                                </select>
+                            </li>
+                            <li class="li-style">
+                                <div id="search-thing">업무구분</div>
+                                <select id="prg-search" class="select-style">
+                                    <option>Value</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="searchBox2">
+                        <ul class="ul-style">
+                            <li class="li-style">
+                                <div id="search-thing">키워드</div>
+                                <input id="prg-search" type="text" class="prg">
+                            </li>
+                            <li class="li-style">
+                                <div id="search-thing">진행상태</div>
+                                <select id="prg-search" class="select-style">
+                                    <option>Value</option>
+                                </select>
+                            </li>
+                            
+                            <li class="li-style">
+                                <div id="search-thing">접수상태</div>
+                                <select id="prg-search" class="select-style">
+                                    <option>Value</option>
+                                </select>
+                            </li>
+                            <div class="btn-box">
+                                <button id="search-btn" class="search-btn">검색</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SR 관리 -->
+            <div id="sr-prg-mgmt" class="bg-dark-subtle">
+                <!-- SR목록 -->
+                <div id="sr-list" class="bg-body-secondary" style="width: 800px; height: 609px;">
+                </div>
+                <!-- SR 상세 -->
+                <div id="sr-mgmt">
+                    <!-- SR 요청 상세 정보 -->
+                    <div id="sr-detail">
+
+                        <div id="title">
+                            SR 요청 상세정보
+                        </div>
+
+                        <hr>
+                        <form>
+                            <div class="form-group">
+                                <label for="srNumber">SR번호</label>
+                                <input type="text" id="srNumber" name="srNumber" value="SR_0005" readonly>
+
+                                <label for="systemCategory">시스템 구분</label>
+                                <input type="text" id="systemCategory" name="systemCategory" value="pepero 시스템"
+                                    readonly>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="srTitle">SR제목</label>
+                                <input type="text" id="srTitle" name="srTitle" value="타임아웃 기능에 오류 수정" readonly>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="relatedReference">관련근거</label>
+                                <input type="text" id="relatedReference" name="relatedReference"
+                                    value="이러이러한 오류발생, 저러저러한 기능이 필요함" readonly>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="requestTeam">요청팀</label>
+                                <input type="text" id="requestTeam" name="requestTeam" value="개발 1팀" readonly>
+
+                                <label for="requester">요청자</label>
+                                <input type="text" id="requester" name="requester" value="이민성" readonly>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="requestDate">요청일</label>
+                                <input type="text" id="requestDate" name="requestDate" value="2024.10.10" readonly>
+
+                                <label for="completionDate">완료 요청일</label>
+                                <input type="text" id="completionDate" name="completionDate" value="2024.10.25"
+                                    readonly>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="srRequestNumber">SR요청번호</label>
+                                <input type="text" id="srRequestNumber" name="srRequestNumber" value="EI_SR_0005"
+                                    readonly>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="srContent">SR 내용</label>
+                                <textarea id="srContent" name="srContent" rows="4" readonly>
+                            </textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="attachment">첨부파일</label>
+                                <input type="text" id="attachment" name="attachment" value="example.xls" readonly>
+                            </div>
+                        </form>
+                    </div>
+
+
+                    <!-- SR 요청 처리 정보 -->
+                    <div id="sr-prg-info" class="bg-warning-subtle" style="width: 440px; height: 306px;"></div>
+                </div>
+            </div>
+
         </div>
     </div>
 

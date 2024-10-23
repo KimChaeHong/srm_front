@@ -14,7 +14,7 @@ body {
     width: 100%;
 }
 
-/* 메인 콘텐츠 영역 */
+/* 메인 콘텐츠 스타일 */
 #main-content {
     display: flex;
     width: 1534px; /* 고정 너비 */
@@ -22,7 +22,7 @@ body {
     align-items: flex-start;
 }
 
-/* 사이드바 스타일 */
+/*------------------- 사이드바 스타일 -------------------*/
 #side-bar {
     padding: 23px 0 23px 15px;
     width: 220px;
@@ -49,7 +49,7 @@ a {
     align-items: center; /* 수직 가운데 정렬 */
 }
 
-/* SR 관리 링크 스타일 */
+/* 목차 링크 스타일 */
 #sr-contents {
     height: 30px;
     font-size: 12px;
@@ -70,7 +70,7 @@ a {
     border-top: 1px solid black; /* 상단에만 선을 적용 */
 }
 
-/* SR 요청 및 진척 조회 링크 스타일 */
+/* 목차 링크 스타일 */
 #sr-request,
 #sr-prg {
     width: 220px;
@@ -107,7 +107,7 @@ a {
     margin-right: 20px; /* 오른쪽 간격 */
 }
 
-/* 섹션 스타일 */
+/*------------------- 섹션 스타일 -------------------*/
 #section {
     width: 1270px;
     height: 700px;
@@ -119,8 +119,150 @@ a {
     height: 130px;
 }
 
+
+/* 검색 */
+/* 공통 스타일 정의 (input, select, textarea) */
+#prg-search, #search-dept{
+    width: 130px;   
+    height: 30px;
+    border: 1px solid #D9D9D9;
+    border-radius: 3px;
+    font-size: 10px;
+    padding: 0 10px;
+}
+.prg{
+    width: 280px !important;
+}
+
+/* 공통 스타일 정의 for .div-style, .date-style */
+.div-style, .date-style {
+    width: 280px;
+}
+
+#search-container {
+    width: 1270px;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 4px 4px 10px rgba(190, 190, 190, 0.5);
+    border-radius: 10px;
+}
+
+.ul-style {
+    display: flex;
+    margin: 30px 0 30px 30px;
+    gap: 90px;
+    height: 30px;
+    padding-left: 32px;
+}
+
+.li-style {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#search-box {
+    width: 1270px;
+}
+
+#search-thing {
+    width: 70px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#search-dept {
+    width: 280px;
+}
+
+.search-btn {
+    width: 63px;
+    height: 28px;
+}
+
+#search-btn {
+    font-size: 12px;
+    color: #4D5969;
+    background-color: white;
+    border: 1px solid #DCDCE1;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+
+
+/*------------------- SR 관리 정보 -------------------*/
+#sr-prg-mgmt{
+    display: flex;
+    justify-content: space-between;
+}
+/* SR 상세 */
+#sr-mgmt{
+    margin-top: 23px;
+    margin-left: 25px;
+}
+
 /* SR 목록 스타일 */
 #sr-list {
     margin-top: 23px;
     height: 547px;
 }
+
+/*------------------- SR 요청 상세 정보 -------------------*/
+#sr-detail{
+    background-color: #FFFFFF;
+    width: 440px;
+    height: 306px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+#title{
+    font-size: 15px;
+    font-weight:600;
+    margin: 12px 12px 5px 14px;
+    width: 109px;
+    height: 20px;
+    display: inline-block; /* 마진 상쇄 방지 */
+    
+}
+
+hr{
+    columns: 1px #EBEBEB;
+    margin: 0px 0px 14px 0px;
+}
+
+label{
+    font-size: 8px;
+    width: 40px;
+}
+
+input{
+    height: 15px;
+    width: 140px;
+    font-size: 8px;
+    border: 0.5px solid #D9D9D9;
+    border-radius: 3px;
+    margin: 4px 0px 4px 0px;
+    padding: 2.5px 10px 2.5px 10px;
+}
+
+.form-group{
+    display: flex;              /* 가로 정렬 */
+    align-items: center;        /* 수직 가운데 정렬 */
+    gap: 15px;                  /* input과 button 사이의 간격 */
+}
+
+form{
+    padding: 0px 5px 0px 5px;
+    display: flex;
+    flex-direction: column; /* 세로로 정렬 */
+    align-items: center; /* 수평 가운데 정렬 */
+}
+
+#relatedReference, #srTitle, #srContent, #srRequestNumber, #attachment{
+    width: 350px;
+}
+
+/*------------------- 진척율 -------------------*/
