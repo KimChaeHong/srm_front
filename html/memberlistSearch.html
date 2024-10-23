@@ -11,56 +11,57 @@
     <link href="../css/memberlistSearch.css" rel="stylesheet">
 </head>
 <body>
-    <div id="search-container">
-        <div id="search-box">
-            <div class="searchBox1">
-                <ul class="ul-style">
-                    <li class="li-style">
-                        <div id="search-thing">소속</div>
-                        <select class="select-style">
-                            <option>Value</option>
-                        </select>
-                    </li>
-                    <li class="li-style">
-                        <div id="search-thing">부서</div>
-                        <select class="select-style dept">
-                            <option>Value</option>
-                        </select>
-                    </li>
-                    <li class="li-style">
-                        <div id="search-thing">가입 일자</div>
-                        <div class="div-style">
-                            <input type="date" class="date-form date1"> - 
-                            <input type="date" class="date-form">
-                        </div>
-                    </li>
-                    
-                </ul>
-            </div>
-            <div class="searchBox2">
-                <ul class="ul-style">
-                    <li class="li-style">
-                        <div id="search-thing">권한</div>
-                        <select class="select-style">
-                            <option>Value</option>
-                        </select>
-                    </li>
-                    <li class="li-style">
-                        <div id="search-thing">승인여부</div>
-                        <select class="select-style">
-                            <option>Value</option>
-                        </select>
-                    </li>
-                    <li class="li-style">
-                        <div id="search-thing">이름 검색</div>
-                        <input type="text">
-                    </li>
-                    <div class="btn-box">
-                        <button id="search-btn" class="detail-btn search-btn">검색</button>
+<!-- 검색창 -->
+<div id="search-container">
+    <div id="search-box">
+        <div class="searchBox1">
+            <ul class="ul-style">
+                <li class="li-style">
+                    <div id="search-thing">소속</div>
+                    <select id="prg-search" class="select-style">
+                        <option>Value</option>
+                    </select>
+                </li>
+                <li class="li-style">
+                    <div id="search-thing">부서</div>
+                    <select id="prg-search" class="select-style dept">
+                        <option>Value</option>
+                    </select>
+                </li>
+                <li class="li-style">
+                    <div id="search-thing">가입 일자</div>
+                    <div class="div-style">
+                        <input id="prg-search" type="date" class="date-form date1"> - 
+                        <input id="prg-search" type="date" class="date-form">
                     </div>
-                </ul>
-            </div>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="searchBox2">
+            <ul class="ul-style">
+                <li class="li-style">
+                    <div id="search-thing">권한</div>
+                    <select id="prg-search" class="select-style">
+                        <option>Value</option>
+                    </select>
+                </li>
+                <li class="li-style">
+                    <div id="search-thing">승인여부</div>
+                    <select id="prg-search" class="select-style">
+                        <option>Value</option>
+                    </select>
+                </li>
+                <li class="li-style">
+                    <div id="search-thing">이름 검색</div>
+                    <input id="search-name" type="text">
+                </li>
+                <div class="btn-box">
+                    <button id="search-btn" class="search-btn">검색</button>
+                </div>
+            </ul>
         </div>
     </div>
+</div>
 </body>
 </html>

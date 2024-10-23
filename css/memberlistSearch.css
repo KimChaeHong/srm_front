@@ -1,9 +1,49 @@
-body {
-    width: 100%;
-    height: 100%;
-    background-color: #EDF2F9;
+/* 검색 */
+/* 공통 스타일 정의 (input, select, textarea) */
+#prg-search {
+    width: 130px;   
+    height: 30px;
+    border: 1px solid #D9D9D9;
+    border-radius: 3px;
+    font-size: 10px;
+    padding: 0 10px;
 }
 
+#search-name {
+    width: 280px;   
+    height: 30px;
+    border: 1px solid #D9D9D9;
+    border-radius: 3px;
+    font-size: 10px;
+    padding: 0 10px;
+}
+
+/* 공통 스타일 정의 for .div-style, .date-style */
+.div-style, .date-style {
+    width: 280px;
+}
+
+#search-container {
+    width: 1270px;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 4px 4px 10px rgba(190, 190, 190, 0.5);
+    border-radius: 10px;
+}
+
+.ul-style {
+    display: flex;
+    margin: 30px 0 30px 30px;
+    gap: 90px;
+}
+
+.li-style {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
 
 #search-box {
     width: 1270px;
@@ -15,47 +55,8 @@ body {
     font-weight: bold;
 }
 
-#search-container {
-    width: 1270px;
-    height: 150px;
-    background-color: white;
-    margin: 20px 0 0 30px;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 4px 4px 10px rgba(190, 190, 190, 0.5);
-    border-radius: 10px;
-}
-
-.ul-style {
-    display: flex;
-    margin: 30px 0 30px 0;
-    padding: 0;
-    gap: 95px;
-    justify-content: center;
-}
-
-.li-style {
-    display: flex;
-    align-items: center;
-    gap: 55px;
-}
-
-/* 공통 스타일 정의 (input, select, textarea) */
-input, select {
-    width: 120px;   
-    height: 30px;
-    border: 1px solid #D9D9D9;
-    border-radius: 3px;
-    font-size: 10px;
-    padding: 0 10px 0 10px;
-}
-
 #search-dept {
     width: 280px;
-}
-
-.date-form {
-    width: 130px;
 }
 
 .search-btn {
