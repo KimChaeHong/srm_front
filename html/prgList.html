@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SR 진척관리</title>
     <!-- 부트스트랩 아이콘 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- 부트스트랩 css -->
@@ -15,7 +15,6 @@
     <!-- 개별 css -->
     <link href="../css/reset.css" rel="stylesheet">
     <link href="../css/prgList.css" rel="stylesheet">
-    <link href="../css/srPlan.css" rel="stylesheet">
 
 </head>
 
@@ -111,9 +110,60 @@
             </div>
 
             <!-- SR 관리 -->
-            <div id="sr-prg-mgmt" class="bg-dark-subtle">
+            <div id="sr-prg-mgmt">
                 <!-- SR목록 -->
-                <div id="sr-list" class="bg-body-secondary" style="width: 800px; height: 609px;">
+                <div id="sr-list">
+                    <h2 id="sr-list-title">SR요청 목록</h2>
+                    <hr>
+                    <div id="table-container">
+                        <table id="pg-table">
+                            <thead>
+                                <tr>
+                                    <th class="col-1"></th>
+                                    <th class="col-2">SR번호</th>
+                                    <th class="col-3">시스템 구분</th>
+                                    <th class="col-4">SR명</th>
+                                    <th class="col-5">요청자</th>
+                                    <th class="col-6">완료요청일</th>
+                                    <th class="col-7">완료예정일</th>
+                                    <th class="col-8">접수상태</th>
+                                    <th class="col-9">진행상황</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="col-1">1</td>
+                                    <td class="col-2">SR_1234_0001</td>
+                                    <td class="col-3">고용보험</td>
+                                    <td class="col-4">이런저런거 수정부탁드립니다.</td>
+                                    <td class="col-5">김김김</td>
+                                    <td class="col-6">2024.10.30</td>
+                                    <td class="col-7">2024.11.03</td>
+                                    <td class="col-8">접수</td>
+                                    <td class="col-9">분석</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="pagination">
+                        <a class="btn page-btn shadow-sm">
+                            <i class="bi bi-chevron-left"></i>
+                        </a>
+                        <a class="btn page-btn shadow-sm active">1</a>
+                        <a class="btn page-btn shadow-sm">2</a>
+                        <a class="btn page-btn shadow-sm">3</a>
+                        <a class="btn page-btn shadow-sm">
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+                        <select class="row-select form-select">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                            <option value="40">40</option>
+                            <option value="50">50</option>
+                        </select>
+                    </div>
+
                 </div>
                 <!-- SR 상세 -->
                 <div id="sr-mgmt">
@@ -128,11 +178,12 @@
                         <form id="sr-detail-form">
                             <div class="detail-form-group">
                                 <label for="srNumber">SR번호</label>
-                                <input type="text" id="srNumber" class="detail-input" name="srNumber" value="SR_0005" readonly>
+                                <input type="text" id="srNumber" class="detail-input" name="srNumber" value="SR_0005"
+                                    readonly>
 
                                 <label for="systemCategory">시스템 구분</label>
-                                <input type="text" id="systemCategory" class="detail-input" name="systemCategory" value="pepero 시스템"
-                                    readonly>
+                                <input type="text" id="systemCategory" class="detail-input" name="systemCategory"
+                                    value="pepero 시스템" readonly>
                             </div>
 
                             <div class="detail-form-group">
@@ -142,19 +193,22 @@
 
                             <div class="detail-form-group">
                                 <label for="requestTeam">요청팀</label>
-                                <input type="text" id="requestTeam" class="detail-input" name="requestTeam" value="개발 1팀" readonly>
+                                <input type="text" id="requestTeam" class="detail-input" name="requestTeam"
+                                    value="개발 1팀" readonly>
 
                                 <label for="requester">요청자</label>
-                                <input type="text" id="requester" class="detail-input" name="requester" value="이민성" readonly>
+                                <input type="text" id="requester" class="detail-input" name="requester" value="이민성"
+                                    readonly>
                             </div>
 
                             <div class="detail-form-group">
                                 <label for="requestDate">요청일</label>
-                                <input type="text" id="requestDate" class="detail-input" name="requestDate" value="2024.10.10" readonly>
+                                <input type="text" id="requestDate" class="detail-input" name="requestDate"
+                                    value="2024.10.10" readonly>
 
                                 <label for="completionDate">완료 요청일</label>
-                                <input type="text" id="completionDate" class="detail-input" name="completionDate" value="2024.10.25"
-                                    readonly>
+                                <input type="text" id="completionDate" class="detail-input" name="completionDate"
+                                    value="2024.10.25" readonly>
                             </div>
 
                             <div class="detail-form-group">
