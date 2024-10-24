@@ -14,8 +14,8 @@
 
     <!-- 개별 css -->
     <link href="../css/reset.css" rel="stylesheet">
-
     <link href="../css/prgList.css" rel="stylesheet">
+    <link href="../css/srPlan.css" rel="stylesheet">
 
 </head>
 
@@ -26,31 +26,31 @@
     <div id="main-content">
         <!-- 사이드바 -->
         <div id="side-bar" class="col-md-2">
-            <div id="chart" class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true" id="sr-contents">My portal</a>
+            <div id="chart" class="side-nav-item">
+                <a class="side-nav-link disabled" aria-disabled="true" id="sr-contents">My portal</a>
                 <hr class="navbar-vertical-divider" id="sr-hr">
             </div>
-            <a class="nav-link" id="sr-request" href="#">
+            <a class="side-nav-link" id="sr-request" href="#">
                 <i id="chart" class="bi bi-clipboard-check"></i>나의 할 일
                 <i id="chevron" class="bi bi-chevron-right"></i>
             </a>
-            <div id="chart" class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true" id="sr-contents">SR 관리</a>
+            <div id="chart" class="side-nav-item">
+                <a class="side-nav-link disabled" aria-disabled="true" id="sr-contents">SR 관리</a>
                 <hr class="navbar-vertical-divider" id="sr-hr">
             </div>
-            <a class="nav-link" id="sr-request" href="#">
+            <a class="side-nav-link" id="sr-request" href="#">
                 <i id="chart" class="bi bi-clipboard-plus"></i>SR 요청 접수
                 <i id="chevron" class="bi bi-chevron-right"></i>
             </a>
-            <a class="nav-link" id="sr-prg" href="#">
+            <a class="side-nav-link" id="sr-prg" href="#">
                 <i id="chart" class="bi bi-clipboard-data-fill"></i>SR 진척 조회
                 <i id="chevron" class="bi bi-chevron-right"></i>
             </a>
-            <div id="chart" class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true" id="sr-contents">게시판</a>
+            <div id="chart" class="side-nav-item">
+                <a class="side-nav-link disabled" aria-disabled="true" id="sr-contents">게시판</a>
                 <hr class="navbar-vertical-divider" id="sr-hr">
             </div>
-            <a class="nav-link" id="sr-request" href="#">
+            <a class="side-nav-link" id="sr-request" href="#">
                 <i id="chart" class="bi bi-book-half"></i>공지사항
                 <i id="chevron" class="bi bi-chevron-right"></i>
             </a>
@@ -95,7 +95,7 @@
                                     <option>Value</option>
                                 </select>
                             </li>
-                            
+
                             <li class="li-style">
                                 <div id="search-thing">접수상태</div>
                                 <select id="prg-search" class="select-style">
@@ -125,57 +125,51 @@
                         </div>
 
                         <hr>
-                        <form>
-                            <div class="form-group">
+                        <form id="sr-detail-form">
+                            <div class="detail-form-group">
                                 <label for="srNumber">SR번호</label>
-                                <input type="text" id="srNumber" name="srNumber" value="SR_0005" readonly>
+                                <input type="text" id="srNumber" class="detail-input" name="srNumber" value="SR_0005" readonly>
 
                                 <label for="systemCategory">시스템 구분</label>
-                                <input type="text" id="systemCategory" name="systemCategory" value="pepero 시스템"
+                                <input type="text" id="systemCategory" class="detail-input" name="systemCategory" value="pepero 시스템"
                                     readonly>
                             </div>
 
-                            <div class="form-group">
+                            <div class="detail-form-group">
                                 <label for="srTitle">SR제목</label>
                                 <input type="text" id="srTitle" name="srTitle" value="타임아웃 기능에 오류 수정" readonly>
                             </div>
 
-                            <div class="form-group">
-                                <label for="relatedReference">관련근거</label>
-                                <input type="text" id="relatedReference" name="relatedReference"
-                                    value="이러이러한 오류발생, 저러저러한 기능이 필요함" readonly>
-                            </div>
-
-                            <div class="form-group">
+                            <div class="detail-form-group">
                                 <label for="requestTeam">요청팀</label>
-                                <input type="text" id="requestTeam" name="requestTeam" value="개발 1팀" readonly>
+                                <input type="text" id="requestTeam" class="detail-input" name="requestTeam" value="개발 1팀" readonly>
 
                                 <label for="requester">요청자</label>
-                                <input type="text" id="requester" name="requester" value="이민성" readonly>
+                                <input type="text" id="requester" class="detail-input" name="requester" value="이민성" readonly>
                             </div>
 
-                            <div class="form-group">
+                            <div class="detail-form-group">
                                 <label for="requestDate">요청일</label>
-                                <input type="text" id="requestDate" name="requestDate" value="2024.10.10" readonly>
+                                <input type="text" id="requestDate" class="detail-input" name="requestDate" value="2024.10.10" readonly>
 
                                 <label for="completionDate">완료 요청일</label>
-                                <input type="text" id="completionDate" name="completionDate" value="2024.10.25"
+                                <input type="text" id="completionDate" class="detail-input" name="completionDate" value="2024.10.25"
                                     readonly>
                             </div>
 
-                            <div class="form-group">
+                            <div class="detail-form-group">
                                 <label for="srRequestNumber">SR요청번호</label>
                                 <input type="text" id="srRequestNumber" name="srRequestNumber" value="EI_SR_0005"
                                     readonly>
                             </div>
 
-                            <div class="form-group">
+                            <div class="detail-form-group">
                                 <label for="srContent">SR 내용</label>
                                 <textarea id="srContent" name="srContent" rows="4" readonly>
                             </textarea>
                             </div>
 
-                            <div class="form-group">
+                            <div class="detail-form-group">
                                 <label for="attachment">첨부파일</label>
                                 <input type="text" id="attachment" name="attachment" value="example.xls" readonly>
                             </div>
@@ -184,7 +178,90 @@
 
 
                     <!-- SR 요청 처리 정보 -->
-                    <div id="sr-prg-info" class="bg-warning-subtle" style="width: 440px; height: 306px;"></div>
+                    <div id="sr-plan-info">
+                        <div id="title">
+                            SR 요청 처리정보
+                        </div>
+                        <hr>
+                        <div class="tabs-container d-flex align-items-center">
+                            <ul class="nav nav-tabs">
+                                <li class="plan-nav-item">
+                                    <a class="nav-link pg-tab active" data-bs-toggle="tab" href="#">SR계획정보</a>
+                                </li>
+                                <li class="plan-nav-item">
+                                    <a class="nav-link pg-tab" data-bs-toggle="tab" href="#">SR자원정보</a>
+                                </li>
+                                <li class="plan-nav-item">
+                                    <a class="nav-link pg-tab" data-bs-toggle="tab" href="#">SR진척율</a>
+                                </li>
+                            </ul>
+
+                            <button id="plan-btn" type="button" class="btn-save">저장</button>
+                        </div>
+                        <form id="sr-plan-form">
+                            <div class="form-group">
+                                <label for="request-type">요청 구분</label>
+                                <select id="request-type" class="form-select">
+                                    <option selected>선택</option>
+                                    <option value="1">개선</option>
+                                    <option value="2">신규</option>
+                                    <option value="3">오류</option>
+                                    <option value="4">기타</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="team">처리팀</label>
+                                <input type="text" id="team" value="개발 1팀">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="work-type">업무 구분</label>
+                                <select id="work-type" class="form-select">
+                                    <option selected>선택</option>
+                                    <option value="1">111</option>
+                                    <option value="2">222</option>
+                                    <option value="3">333</option>
+                                    <option value="4">444</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="person">담당자</label>
+                                <input type="text" id="person" value="정준범">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="start-date">목표 시작일</label>
+                                <input type="text" id="start-date" value="2024. 10. 26">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="end-date">목표 완료일</label>
+                                <input type="text" id="end-date" value="2024. 10. 26">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="status">접수 상태</label>
+                                <select id="status" class="form-select">
+                                    <option selected>선택</option>
+                                    <option>접수</option>
+                                    <option>취소</option>
+                                    <option>보류</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="total-hours">총계획공수</label>
+                                <input type="text" id="total-hours">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="review">검토 내용</label>
+                                <textarea id="review"></textarea>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
 

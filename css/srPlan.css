@@ -1,8 +1,10 @@
-#sr-plan{
+#sr-plan-info{
+    background-color: #FFFFFF;
     width: 440px;
     height: 283px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    margin-top: 20px;
 }
 
 #title {
@@ -50,17 +52,14 @@ hr{
     color: #2C7BE5;
 }
 
+/* --------------------------------- */
+
 label{
     font-size: 8px;
     width: 40px;
 }
 
-#sr-plan-form{
-    border: 1px solid #EDF2F9;
-    padding: 0 3px 0 3px;
-    height: 190px;
 
-}
 
 .form-group{
     display: flex;              /* 가로 정렬 */
@@ -98,14 +97,17 @@ input{
     resize: none;
 }
 
-form{
+#sr-plan-form{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 0px 20px;
-}
+    border: 1px solid #EDF2F9;
+    padding: 0 3px 0 3px;
+    height: 190px;
 
+}
 
 #plan-btn {
     width: 45px;

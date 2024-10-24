@@ -42,7 +42,7 @@ input{
     gap: 15px;                  /* input과 button 사이의 간격 */
 }
 
-form{
+#sr-detail-form{
     padding: 0px 5px 0px 5px;
     display: flex;
     flex-direction: column; /* 세로로 정렬 */
