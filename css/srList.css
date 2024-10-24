@@ -176,6 +176,10 @@ a {
     gap: 30px;
 }
 
+.first-li {
+    margin-left: 30px;
+}
+
 #search-box {
     width: 1270px;
 }
