@@ -13,8 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- 개별 css -->
-    <link href="../css/reset.css" rel="stylesheet">
-    <link href="../css/home.css" rel="stylesheet">
+    <link href="../css/header.css" rel="stylesheet">
 
 
 </head>
@@ -23,13 +22,16 @@
     <!-- 헤더 -->
     <div id="header">
         <div id="logo-container">
-
+            <img src="../images/SRM-logo.png" class="logo">
         </div>
         <div id="info-container">
-            <button class="btn">개발자</button>
-            <div class="line">|</div>
-            <i class="bi bi-person-circle"></i>
-            <button class="btn">로그아웃</button>
+            <div class="user-profile">
+                <span class="badge" id="user-role">개발자</span>
+                <i class="bi bi-person-circle icon"></i>
+                <div class="user-name">이민성 님</div>
+                <i class="bi bi-box-arrow-right logout"></i>
+            </div>
+            
         </div>
     </div>
 </body>
